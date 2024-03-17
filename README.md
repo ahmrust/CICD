@@ -24,8 +24,6 @@
 
 ### Задание 1
 
-`Приведите ответ в свободной форме........`
-
 ```
 Поле для вставки кода...
 Вывод на консоль
@@ -101,7 +99,6 @@ Finished: SUCCESS
 ....
 ```
 
-`При необходимости прикрепитe сюда скриншоты`
 ![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/1.png)
 ![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/2.png)
 ---
