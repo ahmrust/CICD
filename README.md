@@ -102,8 +102,8 @@ Finished: SUCCESS
 ```
 
 `При необходимости прикрепитe сюда скриншоты`
-![alt text](https://github.com/ahmrust/homework-CICD/blob/main/home/vboxuser/test/CICD/homework-CICD/img/1.png)
-![alt text](https://github.com/ahmrust/homework-CICD/blob/main/home/vboxuser/test/CICD/homework-CICD/img/2.png)
+![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/1.png)
+![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/2.png)
 ---
 
 ### Задание 2
@@ -146,24 +146,3 @@ Finished: SUCCESS
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота](ссылка на скриншот)`
 
-### Задание 4
-
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
-```
-Поле для вставки кода...
-....
-....
-....
-....
-```
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
