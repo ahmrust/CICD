@@ -124,6 +124,7 @@ Finished: SUCCESS
 ### Задание 3
 
 Поле для вставки кода...
+
 'pipeline {
  agent any
  stages {
@@ -145,9 +146,10 @@ Finished: SUCCESS
     sh 'curl -v -u admin:admin --upload-file ./app "http:/ubuntu-bionic:8081/repository/my_repo2/app_v$BUILD_NUMBER"'  }
    }
   }
- }'
-
+ }
+'
 ....
+
 'Вывод на консоль
 
 Started by user admin
@@ -232,12 +234,11 @@ ok  	github.com/netology-code/sdvps-materials	(cached)
 [Pipeline] }
 [Pipeline] // node
 [Pipeline] End of Pipeline
-Finished: SUCCESS '
+Finished: SUCCESS'
 
 ....
 ```
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+`При необходимости прикрепитe сюда скриншоты`
 '![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/7.png)'
 '![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/8.png)'
