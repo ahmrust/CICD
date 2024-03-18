@@ -97,10 +97,11 @@ ok      github.com/netology-code/sdvps-materials        (cached)
 #13 DONE 0.0s
 Finished: SUCCESS
 ....
+
 ```
 
-'![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/1.png)'
-'![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/2.png)'
+![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/1.png)
+![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/2.png)
 ---
 
 ### Задание 2
@@ -125,7 +126,7 @@ Finished: SUCCESS
 
 Поле для вставки кода...
 
-'pipeline {
+pipeline {
  agent any
  stages {
   stage('Git') {
@@ -147,10 +148,9 @@ Finished: SUCCESS
    }
   }
  }
-'
 ....
 
-'Вывод на консоль
+Вывод на консоль
 
 Started by user admin
 [Pipeline] Start of Pipeline
@@ -234,11 +234,12 @@ ok  	github.com/netology-code/sdvps-materials	(cached)
 [Pipeline] }
 [Pipeline] // node
 [Pipeline] End of Pipeline
-Finished: SUCCESS'
-
+Finished: SUCCESS
 ....
 ```
 
 `При необходимости прикрепитe сюда скриншоты`
-'![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/7.png)'
-'![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/8.png)'
+![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/7.png)
+![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/8.png)
+
+---
