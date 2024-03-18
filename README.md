@@ -99,8 +99,8 @@ Finished: SUCCESS
 ....
 ```
 
-![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/1.png)
-![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/2.png)
+'![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/1.png)'
+'![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/2.png)'
 ---
 
 ### Задание 2
@@ -117,14 +117,14 @@ Finished: SUCCESS
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 2](ссылка на скриншот 2)`
-![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/4.png)
+'![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/4.png)'
 
 ---
 
 ### Задание 3
 
 Поле для вставки кода...
-pipeline {
+'pipeline {
  agent any
  stages {
   stage('Git') {
@@ -145,10 +145,10 @@ pipeline {
     sh 'curl -v -u admin:admin --upload-file ./app "http:/ubuntu-bionic:8081/repository/my_repo2/app_v$BUILD_NUMBER"'  }
    }
   }
- }
+ }'
 
 ....
-Вывод на консоль
+'Вывод на консоль
 
 Started by user admin
 [Pipeline] Start of Pipeline
@@ -232,12 +232,12 @@ ok  	github.com/netology-code/sdvps-materials	(cached)
 [Pipeline] }
 [Pipeline] // node
 [Pipeline] End of Pipeline
-Finished: SUCCESS
+Finished: SUCCESS '
 
 ....
 ```
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота](ссылка на скриншот)`
-![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/7.png)
-![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/8.png)
+'![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/7.png)'
+'![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/8.png)'
