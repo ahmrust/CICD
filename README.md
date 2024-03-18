@@ -117,29 +117,127 @@ Finished: SUCCESS
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 2](ссылка на скриншот 2)`
-
+![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/4.png)
 
 ---
 
 ### Задание 3
 
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
-```
 Поле для вставки кода...
+pipeline {
+ agent any
+ stages {
+  stage('Git') {
+   steps {git 'https://github.com/ahmrust/sdvps-materials.git'}
+  }
+  stage('Test') {
+   steps {
+    sh 'go test .'
+   }
+  }
+  stage('Build') {
+   steps {
+    sh 'go build -a -installsuffix nocgo -o ./app .'
+   }
+  }
+  stage('Push') {
+   steps {
+    sh 'curl -v -u admin:admin --upload-file ./app "http:/ubuntu-bionic:8081/repository/my_repo2/app_v$BUILD_NUMBER"'  }
+   }
+  }
+ }
+
 ....
-....
-....
+Вывод на консоль
+
+Started by user admin
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /var/lib/jenkins/workspace/my_pipe2.2
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Git)
+[Pipeline] git
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/my_pipe2.2/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ahmrust/sdvps-materials.git # timeout=10
+Fetching upstream changes from https://github.com/ahmrust/sdvps-materials.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/ahmrust/sdvps-materials.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 223dbc3f489784448004e020f2ef224f17a7b06d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 223dbc3f489784448004e020f2ef224f17a7b06d # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master 223dbc3f489784448004e020f2ef224f17a7b06d # timeout=10
+Commit message: "Update README.md"
+ > git rev-list --no-walk 223dbc3f489784448004e020f2ef224f17a7b06d # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] sh
++ go test .
+ok  	github.com/netology-code/sdvps-materials	(cached)
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] sh
++ go build -a -installsuffix nocgo -o ./app .
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Push)
+[Pipeline] sh
++ curl -v -u admin:admin --upload-file ./app http:/ubuntu-bionic:8081/repository/my_repo2/app_v57
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 127.0.0.1:8081...
+* Connected to ubuntu-bionic (127.0.0.1) port 8081 (#0)
+* Server auth using Basic with user 'admin'
+> PUT /repository/my_repo2/app_v57 HTTP/1.1
+> Host: ubuntu-bionic:8081
+> Authorization: Basic YWRtaW46YWRtaW4=
+> User-Agent: curl/7.81.0
+> Accept: */*
+> Content-Length: 1864162
+> Expect: 100-continue
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 100 Continue
+} [65536 bytes data]
+* We are completely uploaded and fine
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 201 Created
+< Date: Sun, 17 Mar 2024 19:37:01 GMT
+< Server: Nexus/3.66.0-02 (OSS)
+< X-Content-Type-Options: nosniff
+< Content-Security-Policy: sandbox allow-forms allow-modals allow-popups allow-presentation allow-scripts allow-top-navigation
+< X-XSS-Protection: 1; mode=block
+< Content-Length: 0
+< 
+
+100 1820k    0     0  100 1820k      0  4131k --:--:-- --:--:-- --:--:-- 4175k
+100 1820k    0     0  100 1820k      0  4130k --:--:-- --:--:-- --:--:-- 4175k
+* Connection #0 to host ubuntu-bionic left intact
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
+
 ....
 ```
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота](ссылка на скриншот)`
-
+![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/7.png)
+![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/8.png)
