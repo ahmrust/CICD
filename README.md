@@ -25,7 +25,6 @@
 ### Задание 1
 
 ```
-Поле для вставки кода...
 Вывод на консоль
 
 Started by user admin
@@ -106,25 +105,13 @@ Finished: SUCCESS
 
 ### Задание 2
 
-`Приведите ответ в свободной форме........`
-
 ```
-Поле для вставки кода...
-....
-....
-....
-....
-```
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 2](ссылка на скриншот 2)`
-'![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/4.png)'
+![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/4.png)
 
 ---
 
 ### Задание 3
-
-Поле для вставки кода...
+...
 
 pipeline {
  agent any
@@ -238,7 +225,6 @@ Finished: SUCCESS
 ....
 ```
 
-`При необходимости прикрепитe сюда скриншоты`
 ![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/7.png)
 ![alt text](https://github.com/ahmrust/homework-CICD/blob/main/img/8.png)
 
